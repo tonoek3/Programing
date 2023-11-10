@@ -1,0 +1,1 @@
+print("El nombre de tu cerveza es\n\t"+'"'+ input("¿Cual es tu pecado mas frecuente? ")+" "+ input("¿Color favorito? ")+'"')
