@@ -23,6 +23,13 @@
 
 
 ## POO (programacion orientada a objetos)
+#class Pajaro:--------------------- para crear una clase
+#def __init__(self,color):--------- declarar un parametro
+#self.color = color --------------- colocar un atributo en un parametro
+#alas = True ---------------------- colocar un parametro para toda la clase 
+#mi_pajaro = Pajaro("negro")------- colocar en una variable el atributo de un parametro de una clase 
+#print(mi_pajaro.color)------------ imprimir el parametro de "color" en la clase "Pajaro" que se coloco en la variable "mi_pajaro"
+
 #@classmethod--------------------- para declarar una estancias no iterables
 #def taco(cls)-------------------- en el caso de cls a comparacion de self, cls nomas lo puedes usar con valores cls o que no esten en self
 #@staticmethod-------------------- es para metodos estaticos, que no puedes llamar a nadie
