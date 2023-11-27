@@ -21,6 +21,19 @@
 #
 
 
+
+## POO (programacion orientada a objetos)
+#@classmethod--------------------- para declarar una estancias no iterables
+#def taco(cls)-------------------- en el caso de cls a comparacion de self, cls nomas lo puedes usar con valores cls o que no esten en self
+#@staticmethod-------------------- es para metodos estaticos, que no puedes llamar a nadie
+#def taco()----------------------- este es para el uso estatico de las clases, no puedes usar ni self ni cls
+#super().__init__(edad,color)----- es parar traer valores init de una clase a otra sin la necesidad de escribirla toda de nuevo 
+#class Padre()-------------------- ejemplo de una clase
+#class Madre()-------------------- otro ejemplo de una clase
+#class Hijo(Padre, Madre)--------- ejemplo de herencia doble, se pueden hacer cantidade infinitas de herencias
+
+
+
   ## LISTAS Y DICCIONARIOS
 #insert(i,"x") ------------- aqui decides donde colocar el valor en la lista donde i esla posicion y la "x" es el valor que meteras
 #append(x) ----------------- aqui solo agregas sin poder colocarlo donde quieras
