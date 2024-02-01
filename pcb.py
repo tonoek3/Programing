@@ -1,34 +1,27 @@
 from ultralytics import YOLO
 import cv2
-import numpy as np
 
-# Leer modelos
-model = YOLO("bestUSB.pt")
-model2 = YOLO("best3.pt")
+#Read model
+model = YOLO("best.pt")
 
-# Capturar video
-cap = cv2.VideoCapture(0)
+#Capture video
+cap = cv2.VideoCapture(1)
 
 while True:
-    # Leer frames
+    #Read frames
     ret, frame = cap.read()
 
-    # Realizar predicciones
-    result = model.predict(frame, imgsz=640, conf=0.99)
-    result2 = model2.predict(frame, imgsz=640, conf=0.90)
+    #Read results
+    result = model.predict(frame, imgsz = 640, conf = 0.85)
 
-    # Mostrar resultados
+    #Show results
     labels = result[0].plot()
-    labels2 = result2[0].plot()
 
-    # Combinar resultados
-    combined = cv2.addWeighted(labels, 0.4, labels2, 0.4, .5)
+    #Show frames
+    cv2.imshow("Detect and Segmentation", labels)
 
-    # Mostrar frames
-    cv2.imshow("Detección y Segmentación", combined)
-
-    # Cerrar programa
-    if cv2.waitKey(1) == 27:
+    #Close program
+    if cv2.waitKey(1) ==27:
         break
 
 cap.release()
